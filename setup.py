@@ -27,6 +27,7 @@ setup(
     packages=[
         'threadlocals',
     ],
+    package_data={'threadlocals': ['license.txt', 'README.md']},
     version=threadlocals.VERSION,
     url='https://github.com/nebstrebor/django-threadlocals',
     description='Contains utils for storing and retreiving values from threadlocals, and middleware for placing the current Django request in threadlocal storage.',
@@ -34,8 +35,8 @@ setup(
     author='Ben Roberts',
     author_email='ben@nutrislice.com',
     platforms=['any'],
-    download_url = 'https://github.com/nebstrebor/django-threadlocals/tarball/0.2',
-    keywords = ['django', 'threadlocals', 'request', 'storage'],
+    download_url='https://github.com/nebstrebor/django-threadlocals/tarball/0.2',
+    keywords=['django', 'threadlocals', 'request', 'storage'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
