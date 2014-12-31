@@ -1,6 +1,6 @@
 New BSD style License
 --------------------------------------------------------------------
-Copyright (c) 2012 Nutrislice, Inc.
+Copyright (c) 2015 Nutrislice, Inc.
 
 All rights reserved.
 

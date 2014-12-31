@@ -3,9 +3,9 @@
 # Date: 1/24/13
 # Time: 8:54 PM
 #
-# Copyright 2012, Nutrislice Inc.  All rights reserved.
+# Copyright 2015, Nutrislice Inc.  All rights reserved.
 from distutils.core import setup
-import threadlocalrequest
+import threadlocals
 
 
 def read_files(*filenames):
@@ -23,28 +23,27 @@ def read_files(*filenames):
 
 
 setup(
-    name='threadlocalrequest',
-    version=threadlocalrequest.VERSION,
-    url='https://github.com/t-evans/django-threadlocalrequest.git',
-    description='Contains middleware for placing the current Django request in threadlocal storage.',
-    long_description=read_files('README.md'),
-    author='Troy Evans',
-    author_email='troy@nutrislice.com',
-    platforms=['any'],
+    name='django-threadlocals',
     packages=[
-        'threadlocalrequest',
+        'threadlocals',
     ],
-    #package_data={'threadlocalrequest': ['docs/*', 'docs/ref/*.rst']},
+    version=threadlocals.VERSION,
+    url='https://github.com/nebstrebor/django-threadlocals',
+    description='Contains utils for storing and retreiving values from threadlocals, and middleware for placing the current Django request in threadlocal storage.',
+    long_description=read_files('README.md'),
+    author='Ben Roberts',
+    author_email='ben@nutrislice.com',
+    platforms=['any'],
+    download_url = 'https://github.com/nebstrebor/django-threadlocals/tarball/0.2',
+    keywords = ['django', 'threadlocals', 'request', 'storage'],
     classifiers=[
-        'Development Status :: Beta',
+        'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',
-        'License :: BSD License',
+        'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Topic :: Software Development :: Libraries :: Application Frameworks',
+        'Programming Language :: Python :: 2',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
-    zip_safe=False,
 )

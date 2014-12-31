@@ -1,5 +1,6 @@
 Setup/Usage
 ===========
+Install using `pip install django-threadlocals`
 
 Add "threadlocalrequest.middleware.ThreadLocalMiddleware" to your MIDDLEWARE_CLASSES setting.
 Then use it as follows:

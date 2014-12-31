@@ -5,7 +5,7 @@ unittest). These will both pass when you run "manage.py test".
 Replace these with more appropriate tests for your application.
 """
 from django.test import RequestFactory, SimpleTestCase, Client
-from threadlocalrequest.threadlocals import set_thread_variable, get_thread_variable, get_current_request, get_current_session
+from threadlocals.threadlocals import set_thread_variable, get_thread_variable, get_current_request, get_current_session
 
 
 class ThreadlocalsTest(SimpleTestCase):

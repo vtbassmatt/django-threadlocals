@@ -8,7 +8,7 @@ __docformat__="restructuredtext"
 
 import logging
 
-log = logging.getLogger('threadlocalrequest.middleware')
+log = logging.getLogger('threadlocals.middleware')
 
 from threading import local
 

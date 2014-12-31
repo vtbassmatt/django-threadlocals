@@ -6,7 +6,7 @@ SECRET_KEY = 'NOT_SO_SECRET'
 
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
-    'threadlocalrequest.middleware.ThreadLocalMiddleware'
+    'threadlocals.middleware.ThreadLocalMiddleware'
 )
 
 TEST_RUNNER = 'testrunner.NoDbTestRunner'
