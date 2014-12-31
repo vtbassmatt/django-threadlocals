@@ -53,7 +53,7 @@ def set_request_variable(key, val, use_threadlocal_if_no_request=True):
     if not request:
         if not use_threadlocal_if_no_request:
             raise RuntimeError(
-                "Unable to set request variable. No threadlocal request available. Is ThreadLocalMiddleware installed?")
+                "Unable to set request variable. No request available in threadlocals. Is ThreadLocalMiddleware installed?")
         set_thread_variable(key, val)
     else:
         try:

@@ -35,7 +35,7 @@ setup(
     author='Ben Roberts',
     author_email='ben@nutrislice.com',
     platforms=['any'],
-    download_url='https://github.com/nebstrebor/django-threadlocals/tarball/0.2',
+    download_url='https://github.com/nebstrebor/django-threadlocals/tarball/%s' % threadlocals.VERSION,
     keywords=['django', 'threadlocals', 'request', 'storage'],
     classifiers=[
         'Development Status :: 4 - Beta',
