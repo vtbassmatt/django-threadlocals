@@ -2,12 +2,12 @@ Setup/Usage
 ===========
 Install using `pip install django-threadlocals`
 
-Add "threadlocalrequest.middleware.ThreadLocalMiddleware" to your MIDDLEWARE_CLASSES setting.
+Add "threadlocals.middleware.ThreadLocalMiddleware" to your MIDDLEWARE_CLASSES setting.
 Then use it as follows:
 
 Example usage:
 --------------
-`from threadlocalrequest.threadlocals import get_current_request
+`from threadlocals.threadlocals import get_current_request
 
 request = get_current_request()`
 
